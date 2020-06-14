@@ -212,6 +212,9 @@ class TinyGsmSim7000 : public TinyGsmModem<TinyGsmSim7000>,
    */
  protected:
   bool restartImpl() {
+    if (!testAT()) { return false ; }
+    sendAT(GF("+CLTS=1"));
+    if (waitResponse(10000L) != 1) { return false;}
     sendAT(GF("+CFUN=0"));
     if (waitResponse(10000L) != 1) { return false; }
     sendAT(GF("+CFUN=1,1"));
