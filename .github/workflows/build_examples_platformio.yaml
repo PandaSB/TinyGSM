@@ -89,6 +89,7 @@ jobs:
             TINY_GSM_MODEM_SIM808,
             TINY_GSM_MODEM_SIM5360,
             TINY_GSM_MODEM_SIM7600,
+            TINY_GSM_MODEM_SIM7670,
             TINY_GSM_MODEM_SIM7000,
             TINY_GSM_MODEM_SIM7000SSL,
             TINY_GSM_MODEM_SIM7070,
